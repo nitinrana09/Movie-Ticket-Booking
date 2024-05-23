@@ -25,6 +25,7 @@ Movie Ticket Booking is a Backend Application developed using Java and Spring Bo
   - User: User can Create, Login, Update, Get User by Email and Disable User.
 - User Authentication and Authorization are implemented using JWT and Spring Security for increased data privacy and security.
 - Email is sent to User when the Show is Booked, Booking is Updated or Deleted containing necessary details about Booking.
+- Serializable Transaction Isolation level is used in Add and Create Booking to avoid getting a particular seat to be booked by more than one user.
 - Data transfer between API calls and server is done through Data Transfer Objects (DTOs).
 - Proper Validations have been implemented.
 - Proper Exception Handling has been done. Exact and user understandable error description is sent in API Response.
@@ -80,3 +81,7 @@ Movie Ticket Booking is a Backend Application developed using Java and Spring Bo
 - User
 ## EER Diagram
 ![image](https://github.com/nitinrana09/Movie-Ticket-Booking/assets/61656356/19e6c48e-eaa4-40fb-a749-e93517378c72)
+## How to get started and use Movie Ticket Booking Application
+- Clone Movie Ticket Booking Application.
+- Configure Database settings in "application.properties" file.
+- Initialize user name of email in "userName", password in "password" and email in "from" in file "EmailServiceImpl.java". 
